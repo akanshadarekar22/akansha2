@@ -1,0 +1,228 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akansha Darekar | Student Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzjpG3Nx1FTir84c2CbZLoRFt1BlgFUfa1Fw&s');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 20px 10px;
+      text-align: center;
+      color: #fff;
+    }
+    nav {
+      background-color: #76d1f0;
+      text-align: center;
+      padding: 12px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      text-decoration: underline;
+      color: #17026a;
+    }
+    .container, section {
+      padding: 40px 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .left, .right {
+      flex: 1 1 300px;
+      margin: 20px;
+      max-width: 500px;
+    }
+    .left h2, section h2 {
+      color: #14487d;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .left p, section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #0e5269;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s, transform 0.5s ease;
+      animation: slideInButton 1.5s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #60bddb;
+      transform: rotate(360deg);
+    }
+    .right img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #65c8eb;
+      color: white;
+      font-size: 14px;
+    }
+    .company-logos {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .company-logos img {
+      height: 40px;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      opacity: 0.8;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .company-logos img:hover {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideInButton {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header h1 {
+      animation: fadeIn 1s ease-in-out;
+    }
+    header p {
+      animation: slideIn 1.5s ease-in-out;
+    }
+    section {
+      margin-top: 20px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Akansha Darekar</h1>
+    <p>Aspiring Web Developer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container" id="about">
+    <div class="left">
+      <h2>About Me</h2>
+      <p><strong>Name:</strong> Akansha Darekar<br>
+         <strong>Role:</strong> Web Developer<br>
+         <strong>Experience:</strong> 4 Years<br>
+         <strong>Email:</strong> akansha@example.com</p>
+      <p>I am passionate about front‑end development and enjoy creating responsive, elegant websites. I focus on clean design, usability, and performance. Let’s build something amazing together!</p>
+      <a class="btn" href="#contact">Contact Me</a>
+    </div>
+    <div class="right">
+      <img src="./Assets/profile pic.jpeg" alt="Profile Photo" />
+    </div>
+  </div>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS</li>
+      <li>SQL, UI/UX</li>
+      <li>Java, JDBC, Servlets</li>
+      <li>Python Basics</li>
+      <li>C, C++</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Website for KAS INDUSTRIES</strong> – <a href="https://kasindustriesgearmanufacturing.wordpress.com/" target="_blank">View</a></li>
+      <li><strong>App Prototype in FIGMA</strong> – <a href="https://youtube.com/shorts/hCIkWabYdVw?si=OwRJlJuGJLE8Mv71" target="_blank">Watch</a></li>
+    </ul>
+  </section>
+
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Digital Electronics</li>
+      <li>Object Oriented Programming</li>
+      <li>Programming in C</li>
+      <li>Database and SQL</li>
+    </ul>
+  </section>
+
+  <section id="resume">
+    <h2>Resume</h2>
+    <p>Click the button below to download my resume:</p>
+    <!-- Download button without link; href can be added later -->
+    <a class="btn" download>Download Resume</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: akansha@example.com</p>
+    <p>Phone: +91‑9322450217</p>
+    <p>Location: Pune, India</p>
+  </section>
+ 
+  <footer>
+    <div class="company-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/800px-Google_%22G%22_logo.svg.png" alt="Google" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Infosys_logo.svg/2560px-Infosys_logo.svg.png" alt="Infosys" />
+      <img src="https://1000logos.net/wp-content/uploads/2021/05/Wipro-logo.png" alt="Wipro" />
+    </div>
+  </footer>
+
+</body>
+</html>
